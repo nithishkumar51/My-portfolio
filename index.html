@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of NITHISHKUMAR K, a Data Scientist and Machine Learning Enthusiast.">
+    <title>Portfolio | NITHISHKUMAR K</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_ID.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+      
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out;
+        }
+    
+        .delay-150 { animation-delay: 0.15s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+          
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Navbar -->
+<nav class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo / Name -->
+        <a href="#" class="text-3xl font-extrabold text-indigo-700">NITHISHKUMAR K</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+            <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
+            <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition duration-300">Projects</a>
+            <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition duration-300">Skills</a>
+            <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-gray-50 md:hidden">
+        <a href="#about" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">About</a>
+        <a href="#projects" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">Projects</a>
+        <a href="#skills" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">Skills</a>
+        <a href="#contact" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative bg-cover bg-center h-screen" style="background-image: url('C:\Users\nithi\Documents\PORTFOLIO 2\1951d6e5c8d9a (1).png');">
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-black opacity-70"></div>
+    <div class="flex items-center justify-center h-full relative z-10">
+        <div class="text-center">
+            <h1 class="text-5xl font-extrabold text-white animate-fadeInUp">Hi, I'm <span class="text-indigo-400">NITHISHKUMAR</span></h1>
+            <p class="text-xl text-gray-300 mt-3 animate-fadeInUp delay-150">Data Scientist | Machine Learning E</p>
+            <a href="#projects"
+                class="mt-8 inline-block bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transition duration-300 animate-fadeInUp delay-300">
+                Explore My Work
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+        <h2 class="text-4xl font-extrabold text-center text-indigo-700">About Me</h2>
+        <div class="mt-8 flex flex-col lg:flex-row items-center">
+            <!-- Image Section -->
+            <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-gray-300 overflow-hidden mb-6 lg:mb-0 lg:mr-12 shadow-lg">
+                <img src="https://via.placeholder.com/300" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Text Content -->
+            <div class="text-center lg:text-left max-w-2xl">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I’m <span class="font-semibold text-indigo-600">NITHISHKUMAR K</span>, a Computer Science Engineering graduate with a passion for **Data Science, Machine Learning, and Data Visualization**. I thrive on turning raw data into meaningful insights and developing innovative solutions to challenging problems.
+                </p>
+                <p class="mt-4 text-gray-600">
+                    With hands-on experience in tools like **Python, Tableau, Power BI**, and libraries such as **NumPy, Pandas, and TensorFlow**, I am driven to continuously learn and apply my knowledge to real-world data-driven solutions.
+                </p>
+                <a href="#contact" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transition duration-300">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+        <h2 class="text-4xl font-extrabold text-center text-indigo-700">Projects</h2>
+        <p class="text-center text-gray-600 mt-2">Here are some of the data-driven projects I’ve worked on.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <!-- Project 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x250" alt="Stock Market Prediction" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Stock Market Prediction</h3>
+                    <p class="text-gray-600 mt-2">Developed a predictive model using machine learning algorithms to forecast stock prices based on historical data and trends.</p>
+                    <p class="text-sm text-gray-500 mt-1">Tools: Python, Pandas, Scikit-learn, Matplotlib</p>
+                    <a href="#" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x250" alt="Traffic Volume Estimation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Traffic Volume Estimation</h3>
+                    <p class="text-gray-600 mt-2">Built a data-driven model to estimate traffic volume using historical and environmental data, optimizing traffic flow management.</p>
+                    <p class="text-sm text-gray-500 mt-1">Tools: Python, Seaborn, Machine Learning, NumPy</p>
+                    <a href="#" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x250" alt="Customer Churn Analysis" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Customer Churn Analysis</h3>
+                    <p class="text-gray-600 mt-2">Analyzed customer behavior to predict churn using data visualization and classification models, improving retention strategies.</p>
+                    <p class="text-sm text-gray-500 mt-1">Tools: Python, Power BI, Pandas, Scikit-learn</p>
+                    <a href="#" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container mx-auto px-6 py-16 bg-gray-100">
+    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Skills & Expertise</h2>
+
+    <!-- Languages -->
+    <div class="mb-8">
+        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Languages</h3>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+                <i class="fab fa-html5 text-orange-500 mr-2"></i> HTML
+            </span>
+            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+                <i class="fab fa-css3-alt text-blue-500 mr-2"></i> CSS
+            </span>
+            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+                <i class="fab fa-python text-yellow-400 mr-2"></i> Python
+            </span>
+            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+                <i class="fas fa-database text-green-400 mr-2"></i> MySQL
+            </span>
+            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+                <i class="fab fa-php text-indigo-500 mr-2"></i> PHP
+            </span>
+        </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="mb-8">
+        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Machine Learning</h3>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">NumPy</span>
+            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Pandas</span>
+            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Matplotlib</span>
+            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Seaborn</span>
+            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Scikit-learn</span>
+            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Natural Language Processing</span>
+        </div>
+    </div>
+
+    <!-- Deep Learning -->
+    <div class="mb-8">
+        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Deep Learning</h3>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">TensorFlow</span>
+            <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">Keras</span>
+        </div>
+    </div>
+
+    <!-- BI Tools -->
+    <div class="mb-8">
+        <h3 class="text-2xl font-semibold text-gray-700 mb-4">BI & Data Visualization Tools</h3>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
+                <i class="fas fa-chart-line text-purple-600 mr-2"></i> Tableau
+            </span>
+            <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
+                <i class="fas fa-chart-bar text-yellow-600 mr-2"></i> Power BI
+            </span>
+            <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
+                <i class="fas fa-file-excel text-green-600 mr-2"></i> Advanced Excel
+            </span>
+        </div>
+    </div>
+</section>
+
+    
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+        <h2 class="text-4xl font-extrabold text-center text-indigo-700">Contact Me</h2>
+        <p class="text-center text-gray-600 mt-2">Feel free to reach out for collaborations or just a friendly chat.</p>
+
+        <div class="flex flex-col-reverse lg:flex-row items-center mt-10">
+            <!-- Contact Form -->
+            <div class="w-full lg:w-1/2 bg-white p-8 shadow-md rounded-lg">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-800 font-semibold">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-300 focus:outline-none" placeholder="Your Full Name">
+                    </div>
+            
+                    <div>
+                        <label for="email" class="block text-gray-800 font-semibold">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-300 focus:outline-none" placeholder="Your Email Address">
+                    </div>
+            
+                    <div>
+                        <label for="message" class="block text-gray-800 font-semibold">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-300 focus:outline-none" placeholder="Your Message..."></textarea>
+                    </div>
+            
+                    <!-- WhatsApp Button -->
+                    <button type="button" id="sendToWhatsApp" class="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-500 transition duration-300">
+                        Send via WhatsApp
+                    </button>
+            
+                    <!-- Email Button -->
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-500 transition duration-300">
+                        Send via Email
+                    </button>
+                </form>
+            </div>
+            
+            <script>
+                // WhatsApp Button Functionality
+                document.getElementById('sendToWhatsApp').addEventListener('click', function () {
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+            
+                    const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+                    const whatsappUrl = `https://wa.me/919344760347?text=${whatsappMessage}`;
+            
+                    window.open(whatsappUrl, '_blank');
+                });
+            
+                // Email Button Functionality
+                document.getElementById('contactForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+            
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+            
+                    const mailtoLink = `mailto:nithishkumarkolanchi2002@gmail.com?subject=Contact Form Submission&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+            
+                    window.location.href = mailtoLink;
+                });
+            </script>            
+            <!-- Contact Info / Social Links -->
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pl-12">
+                <h3 class="text-2xl font-bold text-gray-800">Let's Connect!</h3>
+                <p class="text-gray-600 mt-3">Feel free to reach out via email or check out my social profiles below:</p>
+
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-indigo-600 mr-3"></i>
+                        <a href="mailto:nithishkumarkolanchi2002@gmail.com" class="text-gray-700 hover:text-indigo-600">nithishkumarkolanchi2002@gmail.com</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-linkedin text-indigo-600 mr-3"></i>
+                        <a href="https://www.linkedin.com/in/nithishkumar-k-08a796243/" target="_blank" class="text-gray-700 hover:text-indigo-600">My linkedin profile</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-github text-indigo-600 mr-3"></i>
+                        <a href="https://github.com/nithishkumar51" target="_blank" class="text-gray-700 hover:text-indigo-600">My Github</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-whatsapp text-green-600 mr-3"></i>
+                        <a href="https://wa.me/919344760347" target="_blank" class="text-gray-700 hover:text-green-600">Chat on WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-gray-50 py-8 border-t">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <p class="text-gray-600">&copy; 2024 NITHISHKUMAR K. All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/nithishkumar-k-08a796243/" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300" title="LinkedIn">
+                <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://github.com/nithishkumar51" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300" title="GitHub">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="https://x.com/Nithishk5151" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300" title="Twitter">
+                <i class="fab fa-twitter text-2xl"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
