@@ -10,14 +10,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_ID.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-      
-        menuBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
-      </script>
       <style>
         @keyframes fadeInUp {
             from {
@@ -42,44 +34,67 @@
 <body class="bg-gray-100 text-gray-900">
 
 <!-- Navbar -->
-<nav class="bg-white shadow sticky top-0 z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
         <!-- Logo / Name -->
-        <a href="#" class="text-3xl font-extrabold text-indigo-700">NITHISHKUMAR K</a>
+        <a href="#" class="text-3xl font-extrabold text-indigo-700 tracking-wide hover:text-indigo-500 transition duration-300">
+            NITHISHKUMAR K
+        </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8">
-            <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
-            <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition duration-300">Projects</a>
-            <a href="#skills" class="text-gray-700 hover:text-indigo-600 transition duration-300">Skills</a>
-            <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+        <div class="hidden md:flex space-x-10">
+            <a href="#about" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">About</a>
+            <a href="#projects" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">Projects</a>
+            <a href="#skills" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">Skills</a>
+            <a href="#contact" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">Contact</a>
         </div>
 
         <!-- Mobile Menu Button -->
-        <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
+        <button id="menuBtn" class="md:hidden text-gray-800 focus:outline-none">
+            <i class="fas fa-bars text-3xl"></i>
         </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden bg-gray-50 md:hidden">
-        <a href="#about" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">About</a>
-        <a href="#projects" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">Projects</a>
-        <a href="#skills" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">Skills</a>
-        <a href="#contact" class="block py-2 px-6 text-gray-700 hover:bg-indigo-100">Contact</a>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow-md">
+        <a href="#about" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">About</a>
+        <a href="#projects" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">Projects</a>
+        <a href="#skills" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">Skills</a>
+        <a href="#contact" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">Contact</a>
     </div>
 </nav>
 
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
 <!-- Hero Section -->
-<header class="relative bg-cover bg-center h-screen" style="background-image: url('xxdtby5i.png');">
-    <div class="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-black opacity-70"></div>
-    <div class="flex items-center justify-center h-full relative z-10">
-        <div class="text-center">
-            <h1 class="text-5xl font-extrabold text-white animate-fadeInUp">Hi, I'm <span class="text-indigo-400">NITHISHKUMAR</span></h1>
-            <p class="text-xl text-gray-300 mt-3 animate-fadeInUp delay-150">Data Scientist | Machine Learning E</p>
+<header class="relative h-screen bg-cover bg-center bg-fixed" style="background-image: url('xxdtby5i.png');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-gray-900/80 to-black/90"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8">
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight animate-fadeInUp">
+            Hi, I'm <span class="text-indigo-400">NITHISHKUMAR</span>
+        </h1>
+        <p class="text-lg sm:text-2xl text-gray-300 mt-4 animate-fadeInUp delay-150">
+            Data Scientist | Machine Learning Enthusiast | Data Visualization
+        </p>
+
+        <div class="mt-8 flex space-x-4 animate-fadeInUp delay-300">
             <a href="#projects"
-                class="mt-8 inline-block bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transition duration-300 animate-fadeInUp delay-300">
+                class="bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transform hover:-translate-y-1 transition-all duration-300 shadow-lg">
                 Explore My Work
+            </a>
+            <a href="#contact"
+                class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-600 transform hover:-translate-y-1 transition-all duration-300">
+                Contact Me
             </a>
         </div>
     </div>
@@ -89,26 +104,37 @@
 <section id="about" class="bg-gray-50 py-16">
     <div class="container mx-auto px-6 lg:px-20">
         <h2 class="text-4xl font-extrabold text-center text-indigo-700">About Me</h2>
-        <div class="mt-8 flex flex-col lg:flex-row items-center">
+        <div class="mt-12 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-12">
+
             <!-- Image Section -->
-            <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-gray-300 overflow-hidden shadow-lg">
+            <div class="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-gray-300 overflow-hidden shadow-xl border-4 border-indigo-500">
                 <img src="myprofile.jpg" alt="Profile Picture" class="w-full h-full object-cover object-center">
-            </div>            
+                <div class="absolute inset-0 bg-black bg-opacity-10 rounded-full hover:bg-opacity-0 transition duration-300"></div>
+            </div>
+
             <!-- Text Content -->
-            <div class="text-center lg:text-left max-w-2xl">
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    I’m <span class="font-semibold text-indigo-600">NITHISHKUMAR K</span>, a Computer Science Engineering graduate with a passion for **Data Science, Machine Learning, and Data Visualization**. I thrive on turning raw data into meaningful insights and developing innovative solutions to challenging problems.
+            <div class="mt-8 lg:mt-0 flex-1">
+                <h3 class="text-3xl font-semibold text-gray-800">NITHISHKUMAR K</h3>
+                <p class="mt-3 text-lg text-gray-700 leading-relaxed">
+                    I’m a Computer Science Engineering graduate with a passion for <span class="font-semibold text-indigo-600">Data Science, Machine Learning, and Data Visualization</span>. I enjoy transforming raw data into actionable insights and building solutions that solve real-world problems.
                 </p>
-                <p class="mt-4 text-gray-600">
-                    With hands-on experience in tools like **Python, Tableau, Power BI**, and libraries such as **NumPy, Pandas, and TensorFlow**, I am driven to continuously learn and apply my knowledge to real-world data-driven solutions.
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    With hands-on experience in tools like <span class="font-semibold text-indigo-600">Python, Tableau, Power BI</span>, and libraries like <span class="font-semibold text-indigo-600">NumPy, Pandas, TensorFlow</span>, I constantly strive to innovate and improve my analytical and programming skills.
                 </p>
-                <a href="#contact" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transition duration-300">
-                    Let's Connect
-                </a>
+
+                <div class="mt-6 flex flex-wrap items-center space-x-4">
+                    <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transition duration-300 shadow-lg">
+                        Let's Connect
+                    </a>
+                    <a href="https://drive.google.com/file/d/1OGnxtufUumVYme37u1w_hP25cqp236kn/view?usp=sharing" target="_blank" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-300 transition duration-300 shadow">
+                        View Resume
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 <!-- Projects Section -->
 <section id="projects" class="bg-gray-50 py-16">
     <div class="container mx-auto px-6 lg:px-20">
