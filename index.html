@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of NITHISHKUMAR K, a Data Scientist and Machine Learning Enthusiast.">
     <title>Portfolio | NITHISHKUMAR K</title>
-    <link rel="icon" href="image/data science icon.png" type="image/png">
+    <link rel="icon" href="C:\Users\nithi\Documents\PORTFOLIO 2\data science icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_ID.js" crossorigin="anonymous"></script>
@@ -34,215 +35,291 @@
 <body class="bg-gray-100 text-gray-900">
 
 <!-- Navbar -->
-<nav class="bg-white shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
-        <!-- Logo / Name -->
-        <a href="#" class="text-3xl font-extrabold text-indigo-700 tracking-wide hover:text-indigo-500 transition duration-300">
-            NITHISHKUMAR K
-        </a>
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+    <!-- Logo / Name -->
+    <a href="#" class="text-2xl sm:text-3xl font-extrabold text-indigo-700 tracking-wide hover:text-violet-600 transition duration-300">
+      NITHISHKUMAR K
+    </a>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-10">
-            <a href="#about" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">About</a>
-            <a href="#projects" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">Projects</a>
-            <a href="#skills" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">Skills</a>
-            <a href="#contact" class="text-gray-800 font-medium hover:text-indigo-600 transition duration-300">Contact</a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="menuBtn" class="md:hidden text-gray-800 focus:outline-none">
-            <i class="fas fa-bars text-3xl"></i>
-        </button>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8 font-medium">
+      <a href="#about" class="text-gray-800 hover:text-indigo-600 transition">About</a>
+      <a href="#projects" class="text-gray-800 hover:text-indigo-600 transition">Projects</a>
+      <a href="#skills" class="text-gray-800 hover:text-indigo-600 transition">Skills</a>
+      <a href="#contact" class="text-gray-800 hover:text-indigo-600 transition">Contact</a>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow-md">
-        <a href="#about" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">About</a>
-        <a href="#projects" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">Projects</a>
-        <a href="#skills" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">Skills</a>
-        <a href="#contact" class="block py-3 px-6 text-gray-800 font-medium hover:bg-indigo-50 transition duration-200">Contact</a>
-    </div>
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle Menu">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-md animate__animated animate__fadeInDown">
+    <a href="#about" class="block py-3 px-6 text-gray-700 hover:bg-indigo-50 transition">About</a>
+    <a href="#projects" class="block py-3 px-6 text-gray-700 hover:bg-indigo-50 transition">Projects</a>
+    <a href="#skills" class="block py-3 px-6 text-gray-700 hover:bg-indigo-50 transition">Skills</a>
+    <a href="#contact" class="block py-3 px-6 text-gray-700 hover:bg-indigo-50 transition">Contact</a>
+  </div>
 </nav>
 
+<!-- Toggle Script -->
 <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 </script>
 
 <!-- Hero Section -->
-<header class="relative h-screen bg-cover bg-center bg-fixed" style="background-image: url('image/xxdtby5i.png');">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-gray-900/80 to-black/90"></div>
+<header class="relative h-screen bg-cover bg-center bg-fixed bg-gray-900"
+  style="background-image: url('https://img.freepik.com/free-vector/multicolored-wavy-background_23-2148458578.jpg');">
 
-    <!-- Content -->
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-8">
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight animate-fadeInUp">
-            Hi, I'm <span class="text-indigo-400">NITHISHKUMAR</span>
-        </h1>
-        <p class="text-lg sm:text-2xl text-gray-300 mt-4 animate-fadeInUp delay-150">
-            Data Scientist | Machine Learning Enthusiast | Data Visualization
-        </p>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0f0f0f]/90 via-gray-900/80 to-[#1a1a2e]/90"></div>
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 sm:px-10">
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight animate-fadeInUp drop-shadow-lg">
+      Hi, I'm <span class="text-violet-400">NITHISHKUMAR</span>
+    </h1>
+    <p class="text-base sm:text-2xl text-gray-300 mt-4 animate-fadeInUp delay-150 max-w-2xl">
+      Data Scientist | Generative AI Developer | Data Visualization Specialist
+    </p>
 
-        <div class="mt-8 flex space-x-4 animate-fadeInUp delay-300">
-            <a href="#projects"
-                class="bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transform hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                Explore My Work
-            </a>
-            <a href="#contact"
-                class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-600 transform hover:-translate-y-1 transition-all duration-300">
-                Contact Me
-            </a>
-        </div>
+    <!-- Buttons -->
+    <div class="mt-8 flex flex-wrap gap-4 justify-center animate-fadeInUp delay-300">
+      <a href="#projects"
+        class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:from-indigo-500 hover:to-violet-500 transition-all duration-300 shadow-lg hover:scale-105">
+        🚀 Explore My Work
+      </a>
+      <a href="#contact"
+        class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-violet-700 transition-all duration-300 hover:scale-105">
+        🤝 Contact Me
+      </a>
     </div>
+  </div>
 </header>
 
 <!-- About Section -->
-<section id="about" class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-20">
-        <h2 class="text-4xl font-extrabold text-center text-indigo-700">About Me</h2>
-        <div class="mt-12 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-12">
+<section id="about" class="bg-gradient-to-br from-gray-50 via-white to-violet-50 py-20">
+  <div class="container mx-auto px-6 lg:px-20">
+    <h2 class="text-4xl font-extrabold text-center text-violet-700">About Me</h2>
+    <div class="mt-12 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-12">
 
-            <!-- Image Section -->
-            <div class="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-gray-300 overflow-hidden shadow-xl border-4 border-indigo-500">
-                <img src="image/myprofile.jpg" alt="Profile Picture" class="w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-black bg-opacity-10 rounded-full hover:bg-opacity-0 transition duration-300"></div>
-            </div>
+      <!-- Profile Image -->
+      <div class="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-xl border-4 border-violet-600">
+        <img src="myprofile.jpg" alt="Profile Picture" class="w-full h-full object-cover object-center">
+        <div class="absolute inset-0 bg-black bg-opacity-10 rounded-full hover:bg-opacity-0 transition duration-300"></div>
+      </div>
 
-            <!-- Text Content -->
-            <div class="mt-8 lg:mt-0 flex-1">
-                <h3 class="text-3xl font-semibold text-gray-800">NITHISHKUMAR K</h3>
-                <p class="mt-3 text-lg text-gray-700 leading-relaxed">
-                    I’m a Computer Science Engineering graduate with a passion for <span class="font-semibold text-indigo-600">Data Science, Machine Learning, and Data Visualization</span>. I enjoy transforming raw data into actionable insights and building solutions that solve real-world problems.
-                </p>
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                    With hands-on experience in tools like <span class="font-semibold text-indigo-600">Python, Tableau, Power BI</span>, and libraries like <span class="font-semibold text-indigo-600">NumPy, Pandas, TensorFlow</span>, I constantly strive to innovate and improve my analytical and programming skills.
-                </p>
+      <!-- About Text -->
+      <div class="mt-8 lg:mt-0 flex-1 text-center lg:text-left">
+        <h3 class="text-3xl font-semibold text-slate-800">NITHISHKUMAR K</h3>
+        <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+          I'm a Computer Science Engineering graduate with a strong passion for
+          <span class="font-semibold text-violet-600">Data Science, Machine Learning, and Generative AI</span>.
+          My mission is to turn complex datasets into actionable insights and create AI-powered solutions that solve real-world challenges.
+        </p>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          With hands-on experience in <span class="font-semibold text-violet-600">Generative AI</span> and 
+          <span class="font-semibold text-violet-600">Agent AI frameworks</span>, I specialize in designing 
+          <span class="font-semibold text-violet-600">agentic workflows</span>—where AI systems plan, act, and adapt with minimal human input.
+        </p>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          Skilled in tools like <span class="font-semibold text-violet-600">Python, Tableau, Power BI</span> and libraries such as 
+          <span class="font-semibold text-violet-600">NumPy, Pandas, TensorFlow</span>, I enjoy rapid experimentation and pushing the boundaries of what intelligent systems can do.
+        </p>
 
-                <div class="mt-6 flex flex-wrap items-center space-x-4">
-                    <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-500 transition duration-300 shadow-lg">
-                        Let's Connect
-                    </a>
-                    <a href="https://drive.google.com/file/d/1OGnxtufUumVYme37u1w_hP25cqp236kn/view?usp=sharing" target="_blank" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-300 transition duration-300 shadow">
-                        View Resume
-                    </a>
-                </div>
-            </div>
+        <!-- CTA Buttons -->
+        <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
+          <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:from-indigo-500 hover:to-violet-500 transition duration-300 shadow-lg">
+            🔗 Let's Connect
+          </a>
+          <a href="https://drive.google.com/file/d/1u7fCAaYapj_-wUJxhuDsyy7O1Uk5BULb/view?usp=drive_link" target="_blank"
+            class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-300 transition duration-300 shadow">
+            📄 View Resume
+          </a>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Projects Section -->
+<!-- Projects Section - Horizontal Scroll -->
 <section id="projects" class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 lg:px-20">
-        <h2 class="text-4xl font-extrabold text-center text-indigo-700">Projects</h2>
-        <p class="text-center text-gray-600 mt-2">Here are some of the data-driven projects I’ve worked on.</p>
+  <div class="container mx-auto px-6 lg:px-20">
+    <h2 class="text-4xl font-extrabold text-center text-indigo-700">Projects</h2>
+    <p class="text-center text-gray-600 mt-2">Here are some of the data-driven projects I’ve worked on.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-            <!-- Project 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-                <img src="https://github.com/nithishkumar51/My-portfolio/blob/ebfd6670da01620ea4052c4bca2b5d67258b7375/image/SMP.png" alt="Stock Market Prediction" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800">Stock Market Prediction</h3>
-                    <p class="text-gray-600 mt-2">Developed a predictive model using machine learning algorithms to forecast stock prices based on historical data and trends.</p>
-                    <p class="text-sm text-gray-500 mt-1">Tools: Python, Pandas, Scikit-learn, Matplotlib</p>
-                    <a href="https://github.com/nithishkumar51/Stock-Market-Predication-using-Machine-Learning" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-                <img src="image/TVE.png" alt="Traffic Volume Estimation" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800">Traffic Volume Estimation</h3>
-                    <p class="text-gray-600 mt-2">Built a data-driven model to estimate traffic volume using historical and environmental data, optimizing traffic flow management.</p>
-                    <p class="text-sm text-gray-500 mt-1">Tools: Python, Seaborn, Machine Learning, NumPy</p>
-                    <a href="https://github.com/nithishkumar51/Traffic-Volume-Estimation" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-                <img src="image/ccp.png" alt="Customer Churn Analysis" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-800">Customer Churn Analysis</h3>
-                    <p class="text-gray-600 mt-2">Analyzed customer behavior to predict churn using data visualization and classification models, improving retention strategies.</p>
-                    <p class="text-sm text-gray-500 mt-1">Tools: Python, Power BI, Pandas, Scikit-learn</p>
-                    <a href="https://github.com/nithishkumar51/Customer-Churn-Analysis" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
-                </div>
-            </div>
+    <div class="mt-10 overflow-x-auto">
+      <div class="flex space-x-6 snap-x snap-mandatory scroll-smooth overflow-x-scroll pb-4">
+        <!-- Project 1 -->
+        <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <img src="./images/SMP.png" alt="Stock Market Prediction" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800">Stock Market Prediction</h3>
+            <p class="text-gray-600 mt-2">Developed a predictive model using machine learning algorithms to forecast stock prices based on historical data and trends.</p>
+            <p class="text-sm text-gray-500 mt-1">Tools: Python, Pandas, Scikit-learn, Matplotlib</p>
+            <a href="https://github.com/nithishkumar51/Stock-Market-Predication-using-Machine-Learning" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+          </div>
         </div>
+
+        <!-- Project 2 -->
+        <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <img src="./images/TVE.png" alt="Traffic Volume Estimation" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800">Traffic Volume Estimation</h3>
+            <p class="text-gray-600 mt-2">Built a data-driven model to estimate traffic volume using historical and environmental data, optimizing traffic flow management.</p>
+            <p class="text-sm text-gray-500 mt-1">Tools: Python, Seaborn, Machine Learning, NumPy</p>
+            <a href="https://github.com/nithishkumar51/Traffic-Volume-Estimation" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <img src="./images/ccp.png" alt="Customer Churn Analysis" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800">Customer Churn Analysis</h3>
+            <p class="text-gray-600 mt-2">Analyzed customer behavior to predict churn using data visualization and classification models, improving retention strategies.</p>
+            <p class="text-sm text-gray-500 mt-1">Tools: Python, Power BI, Pandas, Scikit-learn</p>
+            <a href="https://github.com/nithishkumar51/Customer-Churn-Analysis" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+<div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+  <img src="./images/imdb.png" alt="IMDB Review Classification" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800">IMDB Review Classification</h3>
+    <p class="text-gray-600 mt-2">Built a sentiment analysis model using RNN and LSTM to classify movie reviews as positive or negative.</p>
+    <p class="text-sm text-gray-500 mt-1">Tools: Python, TensorFlow, NLP, Keras</p>
+    <a href="https://github.com/nithishkumar51/IMDB_Review_Classification_using_RNN-LSTM" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+  </div>
+</div>
+
+<!-- Project 5 -->
+<div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+  <img src="./images/bird.png" alt="Bird Species Classification" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800">Bird Species Classification</h3>
+    <p class="text-gray-600 mt-2">Used VGG-19 deep learning framework to classify bird species from images with high accuracy.</p>
+    <p class="text-sm text-gray-500 mt-1">Tools: Python, Keras, VGG-19, CNN</p>
+    <a href="https://github.com/nithishkumar51/BIRD-SPECIES-IDENTIFICATION-AND-CLASSIFICATION-USING-VGG-19-FRAMEWORK" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+  </div>
+</div>
+
+<!-- Project 6 -->
+<div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+  <img src="./images/rotten.png" alt="Rotten Tomatoes Models" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800">Rotten Tomatoes Models</h3>
+    <p class="text-gray-600 mt-2">Implemented multiple NLP models to predict sentiment labels for movie reviews from Rotten Tomatoes.</p>
+    <p class="text-sm text-gray-500 mt-1">Tools: Python, NLP, Sklearn, Logistic Regression</p>
+    <a href="https://github.com/nithishkumar51/Rotten_Tomatoes_Models" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+  </div>
+</div>
+
+<!-- Project 7 -->
+<div class="min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+  <img src="./images/fitness.png" alt="Health & Fitness Tracker" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-800">Health & Fitness Tracker</h3>
+    <p class="text-gray-600 mt-2">Designed a full-stack dashboard to track health metrics, activities, and progress over time.</p>
+    <p class="text-sm text-gray-500 mt-1">Tools: Python, Streamlit, Matplotlib, Pandas</p>
+    <a href="https://github.com/nithishkumar51/Health-Fitness-Tracker" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition duration-300">View Project</a>
+  </div>
+</div>
+
+
+        <!-- Add more projects here as needed -->
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="container mx-auto px-6 py-16 bg-gray-100">
-    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Skills & Expertise</h2>
+<section id="skills" class="container mx-auto px-6 py-16 bg-gradient-to-br from-white via-gray-50 to-gray-100">
+  <h2 class="text-4xl font-extrabold text-center text-indigo-700 mb-12">Skills & Expertise</h2>
 
-    <!-- Languages -->
-    <div class="mb-8">
-        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Languages</h3>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
-                <i class="fab fa-html5 text-orange-500 mr-2"></i> HTML
-            </span>
-            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
-                <i class="fab fa-css3-alt text-blue-500 mr-2"></i> CSS
-            </span>
-            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
-                <i class="fab fa-python text-yellow-400 mr-2"></i> Python
-            </span>
-            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
-                <i class="fas fa-database text-green-400 mr-2"></i> MySQL
-            </span>
-            <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
-                <i class="fab fa-php text-indigo-500 mr-2"></i> PHP
-            </span>
-        </div>
+  <!-- Languages -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Languages & Backend</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+        <i class="fab fa-html5 text-orange-500 mr-2"></i> HTML
+      </span>
+      <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+        <i class="fab fa-css3-alt text-blue-500 mr-2"></i> CSS
+      </span>
+      <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+        <i class="fab fa-python text-yellow-400 mr-2"></i> Python
+      </span>
+      <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+        <i class="fas fa-database text-green-400 mr-2"></i> MySQL
+      </span>
+      <span class="bg-gray-800 text-white py-2 px-4 rounded-full flex items-center">
+        <i class="fab fa-php text-indigo-500 mr-2"></i> PHP
+      </span>
     </div>
+  </div>
 
-    <!-- Machine Learning -->
-    <div class="mb-8">
-        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Machine Learning</h3>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">NumPy</span>
-            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Pandas</span>
-            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Matplotlib</span>
-            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Seaborn</span>
-            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Scikit-learn</span>
-            <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Natural Language Processing</span>
-        </div>
+  <!-- Machine Learning -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Machine Learning</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">NumPy</span>
+      <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Pandas</span>
+      <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Matplotlib</span>
+      <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Seaborn</span>
+      <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">Scikit-learn</span>
+      <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full">NLP</span>
     </div>
+  </div>
 
-    <!-- Deep Learning -->
-    <div class="mb-8">
-        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Deep Learning</h3>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">TensorFlow</span>
-            <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">Keras</span>
-        </div>
+  <!-- Deep Learning -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Deep Learning</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">TensorFlow</span>
+      <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">Keras</span>
+      <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full">CNN / RNN / LSTM</span>
     </div>
+  </div>
 
-    <!-- BI Tools -->
-    <div class="mb-8">
-        <h3 class="text-2xl font-semibold text-gray-700 mb-4">BI & Data Visualization Tools</h3>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
-                <i class="fas fa-chart-line text-purple-600 mr-2"></i> Tableau
-            </span>
-            <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
-                <i class="fas fa-chart-bar text-yellow-600 mr-2"></i> Power BI
-            </span>
-            <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
-                <i class="fas fa-file-excel text-green-600 mr-2"></i> Advanced Excel
-            </span>
-        </div>
+  <!-- BI & Visualization -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">BI & Visualization</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
+        <i class="fas fa-chart-line text-purple-600 mr-2"></i> Tableau
+      </span>
+      <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
+        <i class="fas fa-chart-bar text-yellow-600 mr-2"></i> Power BI
+      </span>
+      <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full flex items-center">
+        <i class="fas fa-file-excel text-green-600 mr-2"></i> Advanced Excel
+      </span>
     </div>
+  </div>
+
+  <!-- Generative AI Tools -->
+  <div>
+    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Generative AI Tools</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">OpenAI (ChatGPT, Whisper, DALL·E)</span>
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">LangChain</span>
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">LLM Agents</span>
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">Vector DB (FAISS, Chroma)</span>
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">Hugging Face Transformers</span>
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">Prompt Engineering</span>
+      <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full">Google Gemini & Vertex AI</span>
+    </div>
+  </div>
 </section>
-
     
 <!-- Contact Section -->
 <section id="contact" class="bg-gray-50 py-16">
